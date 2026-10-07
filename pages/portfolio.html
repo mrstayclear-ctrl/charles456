@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+ <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- BOOTSTRAP ICONS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    >
+
+    <!--  GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+
+    <div class="container">
+
+       <a class="navbar-brand" href="#">
+    Charlie's Services Hub
+</a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">
+                        Portfolio
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+                
+
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+
+                    <a
+                        href="contact.html"
+                        class="btn btn-brand"
+                    >
+                        Get Started
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+    <!-- =====================================================
+     PORTFOLIO
+===================================================== -->
+
+<section id="portfolio">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="text-primary fw-bold">
+                PORTFOLIO
+            </span>
+
+            <h2 class="section-title mt-2">
+                Featured Projects
+            </h2>
+
+           
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card portfolio-card">
+
+                    <img
+                        src="../images/logo.png"
+                        alt="Project"
+                    >
+
+                    <div class="card-body p-4">
+
+                        <span class="badge text-bg-light">
+                            Branding
+                        </span>
+
+                        <h5 class="fw-bold mt-3">
+                            Brand Identity Project
+                        </h5>
+
+                        <p class="text-muted">
+                            A modern visual identity designed for a growing brand.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card portfolio-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=80"
+                        alt="Project"
+                    >
+
+                    <div class="card-body p-4">
+
+                        <span class="badge text-bg-light">
+                            Design
+                        </span>
+
+                        <h5 class="fw-bold mt-3">
+                            Social Media Design
+                        </h5>
+
+                        <p class="text-muted">
+                            Creative graphics created for digital platforms.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card portfolio-card">
+
+                    <img
+                        src="data:image/jpeg;base64,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"
+                        alt="Project"
+                    >
+
+                    <div class="card-body p-4">
+
+                        <span class="badge text-bg-light">
+                            Management
+                        </span>
+
+                        <h5 class="fw-bold mt-3">
+                            Project Management
+                        </h5>
+
+                        <p class="text-muted">
+                            A structured workflow created for efficient project management.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="text-primary fw-bold">
+                TESTIMONIALS
+            </span>
+
+            <h2 class="section-title mt-2">
+                What Clients Say
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="testimonial">
+
+                    <div class="stars mb-3">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-muted">
+                        "The brand logo delivered was clean, creative and delivered
+                        exactly as requested."
+                    </p>
+
+                    <h6 class="fw-bold mb-0">
+                        Okey Johnson
+                    </h6>
+
+                    <small class="text-muted">
+                        CEO of Glowskin Care Cosmetics
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="testimonial">
+
+                    <div class="stars mb-3">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-muted">
+                        "Very professional and easy to work with.
+                        I would definitely recommend the service."
+                    </p>
+
+                    <h6 class="fw-bold mb-0">
+                        Ezedike Chizaram
+                    </h6>
+
+                    <small class="text-muted">
+                        Teacher
+                    </small>
+
+                </div>
+
+            </div>
+ <div class="col-md-4">
+
+                <div class="testimonial">
+
+                    <div class="stars mb-3">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-muted">
+                        "He helped me organize my workflows efficiently using Trello, 
+                        making my project neater and convenient."
+
+                    
+                    </p>
+
+                    <h6 class="fw-bold mb-0">
+                        Phillips Maduagwu
+                    </h6>
+
+                    <small class="text-muted">
+                        400L Student
+                    </small>
+
+                </div>
+
+            </div>
+
+ <div class="col-md-4">
+
+                <div class="testimonial">
+
+                    <div class="stars mb-3">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-muted">
+                        "The CBT activation services surely helped me boost
+                        my success chances through constant practice
+                         and flexible use of the platform."
+                       
+                    </p>
+
+                    <h6 class="fw-bold mb-0">
+                        Adebola Seyi
+                    </h6>
+
+                    <small class="text-muted">
+                        UTME Aspirant
+                    </small>
+
+                </div>
+
+            </div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="row g-5">
+
+
+            <div class="col-lg-5">
+
+                <h4 class="fw-bold">
+                    Charlie's <span class="text-primary">
+                        Services Hub
+                    </span>
+                </h4>
+
+                <p class="text-secondary mt-3">
+
+                    Creative ideas. Digital solutions.
+                    Professional results.
+
+                </p>
+
+
+                <div class="mt-4">
+
+                    <a href="https://www.bing.com/ck/a?!&&p=9feb0f4310e8fc81fb47307b9c2fcb433180a0ec6b090beaa0cdb81ada6acd82JmltdHM9MTc5MDM4MDgwMA&ptn=3&ver=2&hsh=4&fclid=1b121233-e834-6861-1917-0503e92b69a7&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tLw" class="social-icon">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.bing.com/ck/a?!&&p=528c1a30f870afdccb645fd1c2c359d03a82cc8d099572224cc687672ef10321JmltdHM9MTc5MDM4MDgwMA&ptn=3&ver=2&hsh=4&fclid=1b121233-e834-6861-1917-0503e92b69a7&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8" class="social-icon">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.bing.com/ck/a?!&&p=65aac3eaa74bcf0e8704a24eafe62440c867f654f929f1806dbceceaddc57669JmltdHM9MTc5MDM4MDgwMA&ptn=3&ver=2&hsh=4&fclid=1b121233-e834-6861-1917-0503e92b69a7&psq=whatsapp&u=a1aHR0cHM6Ly93d3cud2hhdHNhcHAuY29tLw" class="social-icon">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.bing.com/ck/a?!&&p=339bd006823ff5f0c542a1fcebcbe4391bc80062686b438f9a3b58145658d2aaJmltdHM9MTc5MDM4MDgwMA&ptn=3&ver=2&hsh=4&fclid=1b121233-e834-6861-1917-0503e92b69a7&psq=twitt&u=a1aHR0cHM6Ly94LmNvbS8" class="social-icon">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h6 class="fw-bold mb-3">
+                    Company
+                </h6>
+
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h6 class="fw-bold mb-3">
+                    Services
+                </h6>
+
+                <a href="services.html">Design</a>
+                <a href="services.html">Management</a>
+                <a href="services.html">Typing</a>
+                <a href="services.html">Academic</a>
+
+            </div>
+
+
+            <div class="col-lg-3">
+
+                <h6 class="fw-bold mb-3">
+                    Contact
+                </h6>
+
+                <p class="text-secondary">
+                    <i class="bi bi-envelope me-2"></i>
+                    mr.stayclear@gmail.com
+                </p>
+
+                <p class="text-secondary">
+                    <i class="bi bi-telephone me-2"></i>
+                    +234 8064586383
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <hr class="border-secondary mt-5">
+
+
+        <div class="text-center text-secondary pt-3">
+
+            <p>
+                © 2026 Charlie's Services Hub.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
