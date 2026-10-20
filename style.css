@@ -194,9 +194,7 @@
             transform: scale(1.08);
         }
 
-        /* =========================
-           TESTIMONIALS
-        ========================== */
+        /* TESTIMONIALS */
 
         .testimonial {
             background: white;
@@ -210,9 +208,7 @@
         }
 
 
-        /* =========================
-           CONTACT
-        ========================== */
+        /* CONTACT */
 
         .contact-card {
             border: none;
@@ -312,7 +308,7 @@
             background:
                 linear-gradient(
                     135deg,
-                    #028b19,
+                    #014f0e,
                     #08f343
                 );
 
